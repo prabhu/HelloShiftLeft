@@ -10,7 +10,7 @@ jobs:
       - run:
           name: Perform ShiftLeft Scan
           command: |
-            scan -e "WORKSPACE=${CIRCLE_REPOSITORY_URL}" --build
+            scan --build
       - store_artifacts:
           path: reports
           destination: sast-scan-reports
