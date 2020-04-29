@@ -3,7 +3,7 @@ pool:
 container: shiftleft/sast-scan:latest
 steps:
 # This integrates ShiftLeft Scan with automatic build
-- script: scan --build --out_dir /reports/CodeAnalysisLogs
+- script: scan --build --out_dir $(Build.ArtifactStagingDirectory)/CodeAnalysisLogs
   env:
     WORKSPACE: https://github.com/prabhu/HelloShiftLeft/blob/$(Build.SourceVersion)
     GITHUB_TOKEN: $(GITHUB_TOKEN)      
