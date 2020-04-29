@@ -1,6 +1,6 @@
 pool:
   vmImage: 'ubuntu-latest'
-container: shiftleft/sast-scan
+container: shiftleft/sast-scan:latest
 steps:
 # This integrates ShiftLeft Scan with automatic build
 - script: scan --build --out_dir /reports/CodeAnalysisLogs
