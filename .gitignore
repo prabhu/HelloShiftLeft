@@ -136,3 +136,6 @@ dmypy.json
 .pyre/
 .coverage
 reports/
+.settings/
+.classpath
+.project
