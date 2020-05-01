@@ -1,0 +1,11 @@
+{
+  "extensions": [
+    "shiftleftsecurity.shiftleft-scan",
+    "visualstudioexptteam.vscodeintellicode"
+  ],
+  "image": "shiftleft/sast-scan:latest",
+  "settings": {
+
+  },
+  "postCreateCommand": "mvn compile > /dev/null"
+}
