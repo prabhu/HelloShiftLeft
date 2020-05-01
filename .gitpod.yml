@@ -1,1 +1,1 @@
-image: shiftleft/sast-scan:latest
+image: prabhus/scan-ide:latest
