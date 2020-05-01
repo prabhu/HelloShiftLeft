@@ -3,7 +3,7 @@
     "shiftleftsecurity.shiftleft-scan",
     "visualstudioexptteam.vscodeintellicode"
   ],
-  "image": "shiftleft/sast-scan:latest",
+  "image": "prabhus/scan-ide:latest",
   "settings": {
 
   },
