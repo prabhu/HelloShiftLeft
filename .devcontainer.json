@@ -1,7 +1,6 @@
 {
   "extensions": [
-    "shiftleftsecurity.shiftleft-scan",
-    "visualstudioexptteam.vscodeintellicode"
+
   ],
   "image": "prabhus/scan-ide:latest",
   "settings": {
