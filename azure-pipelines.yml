@@ -10,6 +10,7 @@ steps:
     SHIFTLEFT_ORG_ID: $(SHIFTLEFT_ORG_ID)
     SHIFTLEFT_ORG_TOKEN: $(SHIFTLEFT_ORG_TOKEN)
     SHIFTLEFT_ACCESS_TOKEN: $(SHIFTLEFT_ACCESS_TOKEN)
+    SCAN_DEBUG_MODE: debug
   displayName: "ShiftLeft Inspect Analyze"
   continueOnError: "true"
 # To integrate with the ShiftLeft Scan Extension it is necessary to publish the CodeAnalysisLogs folder
