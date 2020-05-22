@@ -7,9 +7,9 @@ steps:
   env:
     WORKSPACE: https://github.com/prabhu/HelloShiftLeft/blob/$(Build.SourceVersion)
     GITHUB_TOKEN: $(GITHUB_TOKEN)
-    SHIFTLEFT_ORG_ID: $(SHIFTLEFT_ORG_ID)
-    SHIFTLEFT_ORG_TOKEN: $(SHIFTLEFT_ORG_TOKEN)
-    SHIFTLEFT_ACCESS_TOKEN: $(SHIFTLEFT_ACCESS_TOKEN)
+    SHIFTLEFT_ORG_ID: "$(SHIFTLEFT_ORG_ID)"
+    SHIFTLEFT_ORG_TOKEN: "$(SHIFTLEFT_ORG_TOKEN)"
+    SHIFTLEFT_ACCESS_TOKEN: "$(SHIFTLEFT_ACCESS_TOKEN)"
     SCAN_DEBUG_MODE: debug
   displayName: "ShiftLeft Inspect Analyze"
   continueOnError: "true"
