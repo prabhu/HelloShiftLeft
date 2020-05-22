@@ -1,13 +1,16 @@
 pool:
   vmImage: 'ubuntu-latest'
-container: shiftleft/sast-scan:latest
+container: shiftleft/scan-java:latest
 steps:
 # This integrates ShiftLeft Scan with automatic build
 - script: scan --build --out_dir $(Build.ArtifactStagingDirectory)/CodeAnalysisLogs
   env:
     WORKSPACE: https://github.com/prabhu/HelloShiftLeft/blob/$(Build.SourceVersion)
-    GITHUB_TOKEN: $(GITHUB_TOKEN)      
-  displayName: "Perform ShiftLeft scan"
+    GITHUB_TOKEN: $(GITHUB_TOKEN)
+    SHIFTLEFT_ORG_ID: $(SHIFTLEFT_ORG_ID)
+    SHIFTLEFT_ORG_TOKEN: $(SHIFTLEFT_ORG_TOKEN)
+    SHIFTLEFT_ACCESS_TOKEN: $(SHIFTLEFT_ACCESS_TOKEN)
+  displayName: "ShiftLeft Inspect Analyze"
   continueOnError: "true"
 # To integrate with the ShiftLeft Scan Extension it is necessary to publish the CodeAnalysisLogs folder
 # as an artifact with the same name
