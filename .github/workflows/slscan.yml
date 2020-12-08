@@ -1,20 +1,16 @@
 name: ShiftLeft Scan
 
 on:
-  push:
-    branches:
-      - master
-      - feature/*
-  schedule:
-    - cron: "0 */4 * * *"
-
+  pull_request:
+  workflow_dispatch:
+  
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
     - name: Perform ShiftLeft Scan
-      uses: ShiftLeftSecurity/scan-action@master
+      uses: ShiftLeftSecurity/scan-action@fix/gh-emoji
       with:
         output: reports
       env:
