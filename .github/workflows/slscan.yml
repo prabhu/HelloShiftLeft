@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Perform ShiftLeft Scan
-      uses: ShiftLeftSecurity/scan-action@fix/gh-emoji
+      uses: ShiftLeftSecurity/scan-action@master
       with:
         output: reports
       env:
